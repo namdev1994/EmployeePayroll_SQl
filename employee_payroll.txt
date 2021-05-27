@@ -62,6 +62,9 @@ mysql> insert into employee_payroll_service (name,salary,start) values
 Query OK, 3 rows affected (0.33 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
+
+UC4:Retrive All data from table
+
 mysql> select * from employee_payroll_service;
 +----+---------+--------+------------+
 | id | name    | salary | start      |
