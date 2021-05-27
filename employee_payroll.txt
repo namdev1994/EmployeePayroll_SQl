@@ -27,3 +27,25 @@ mysql> show databases;
 | sys                |
 +--------------------+
 5 rows in set (0.04 sec)
+
+
+mysql> CREATE TABLE employee_payroll_Service
+    -> (id      INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    -> name varchar(150) not null,
+    -> salary double not null,
+    -> start date not null,
+    -> primary key (id)
+    -> );
+Query OK, 0 rows affected (2.18 sec)
+
+mysql> DESCRIBE employee_payroll_service
+    -> ;
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int unsigned | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(150) | NO   |     | NULL    |                |
+| salary | double       | NO   |     | NULL    |                |
+| start  | date         | NO   |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+4 rows in set (0.13 sec)
